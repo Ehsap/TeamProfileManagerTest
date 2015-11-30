@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Soccer Team Manager"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:layout_gravity="center_horizontal"
+            android:hint="Please Enter a Team Name" />
+
+        <EditText
+            android:layout_width="137dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText2"
+            android:text="Team Name" />
+
+        <EditText
+            android:layout_width="341dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/teamAddressField"
+            android:editable="true"
+            android:hint="Please Enter a Team Location" />
+
+        <TextView
+            android:layout_width="206dp"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            android:id="@+id/textView3" />
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/avatarImage"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/ic_logo_00"
+            android:clickable="true"
+            android:onClick="OnSetAvatarButton" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Open in Google Maps"
+            android:id="@+id/MapButton"
+            android:layout_gravity="right"
+            android:layout_marginTop="100dp"
+            android:onClick="OnOpenInGoogleMaps" />
+    </LinearLayout>
+
+</RelativeLayout>
